@@ -11,7 +11,7 @@ router.get('/:id', (req, res) => {
   const something = data.find(item => item.id.toLowerCase() === req.params.id);
 
   if(!something) {
-    res.send(`route param ${req.params.id} not found :(`);
+    res.status(404).send(`route param ${req.params.id} not found :(`);
   } else {
     res.send(something);
   }
