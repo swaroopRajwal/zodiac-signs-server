@@ -1,0 +1,16 @@
+{
+  "name": "zodiac-signs-server",
+  "version": "1.0.0",
+  "description": "zodiac signs api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Swaroop Rajwal",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "moment": "^2.29.3"
+  }
+}
