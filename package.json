@@ -4,7 +4,8 @@
   "description": "zodiac signs api",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "author": "Swaroop Rajwal",
   "license": "MIT",
