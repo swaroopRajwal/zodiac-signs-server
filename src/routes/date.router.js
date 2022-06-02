@@ -14,8 +14,8 @@ const compareDates = (date, item) => {
 }
 
 router.get("/:date", (req, res) => {
-  const date = req.params.date
-
+  const param = req.params.date
+  const date = `2001-${moment(param).format('MM')}-${moment(param).format('D')}T12:00:00Z`
   const signInfo = data.find(item => compareDates(date, item));
   res.send(signInfo);
 })
