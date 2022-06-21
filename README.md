@@ -7,7 +7,7 @@
 
 2. To get data for only one zodiac sign make a request make a `get` request on the `/signs/<sign_name>` route. For example
 ```
-GET /signs/tautus
+GET /signs/taurus
 ```
 
 3. To get data using birth day and month make a `get` request on the `/date/<date>` route. For example
