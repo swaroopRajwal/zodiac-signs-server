@@ -11,12 +11,15 @@ const datesRouter = require("./routes/date.router");
 // * setting up the middlewares
 app.use(cors());
 
-app.listen(process.env.PORT, () => {
-  console.log(`server started on port ${process.env.PORT}`);
+// * starting the server
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
 })
 
 app.use("/signs", signsRouter);
-app.use("/date", datesRouter)
+app.use("/date", datesRouter);
+
 app.get("*", (req, res) => {
   res.status(404).send({message: "Route not found"});
 })
