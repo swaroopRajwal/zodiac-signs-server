@@ -4,7 +4,11 @@ const router = express.Router();
 const data = require("../../lib/data");
 
 router.get('/', (req, res) => {
-  res.send(data);
+  res.send([...data.map(item => ({
+    id: item.id,
+    name: item.name,
+    indianname: item.indianName,
+  }))]);
 })
 
 router.get('/:id', (req, res) => {
